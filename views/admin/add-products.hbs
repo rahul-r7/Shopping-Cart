@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Styled Form</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form action="/admin/add-products" method="POST" enctype="multipart/form-data">
+
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+
+
+
+            <label for="category">Category:</label>
+            <input type="text" class="form-control" id="category" name="category" required>
+
+
+
+            <label for="price">Price:</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+
+
+
+            <label for="description">Description:</label>
+            <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+
+
+
+            <label for="image">Image:</label>
+            <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
